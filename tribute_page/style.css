@@ -1,0 +1,346 @@
+:root {
+    /*color palate from: https://www.materialpalette.com/indigo/pink*/
+    --dark-primary-color: #303F9F;
+    --primary-color: #3F51B5;
+    --light-primary-color: #C5CAE9;
+    --text-icon-color:#FFFFFF;
+    --primary-text-color:#212121;
+    --secondary-text-color:#757575;
+    --divider-color: #BDBDBD;
+    --accent-color: #FF4081;
+  }
+  body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--secondary-text-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+  }
+  
+  table {
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+  .table-heading {
+    background-color: var(--primary-color);
+    color: var(--text-icon-color);
+  }
+  hr.hr-style {
+    margin-top: 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 64, 129), rgba(0, 0, 0, 0));
+  }
+  hr.hr-style-two {
+      margin-top: 0;
+      border: 0;
+      height: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid var(--divider-color);
+  }
+  
+  .cover-image {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://dl.dropbox.com/s/dfynkdansigr6u7/cover_mobile.jpg?dl=0) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .cover-image-2 {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://dl.dropbox.com/s/s5fnipk6tnh7e35/cover_mobile_2.jpg?dl=0) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .cover-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3e456b;
+    opacity: 0.8;
+  }
+  
+  .hero {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    font-family: 'Reenie Beanie', cursive;
+  }
+  .hero-title {
+    font-size: 60px;
+    color: var(--text-icon-color);
+  }
+  .hero-text {
+    color: var(--text-icon-color);
+  }
+  
+  .chevron {
+    margin-top: 20px;
+    font-size: 32px;
+    color: var(--accent-color);
+  }
+  
+  /*Animating Chevron icon at home page: https://codepen.io/dodozhang21/pen/siKtp */
+  @-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  .hero-scroll {
+    position: absolute;
+    bottom: 60px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 40px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  /*Chevron icon animation's styling ends here*/
+  
+  .dhoni-main {
+  }
+  
+  .dhoni-intro {
+    margin-bottom: 1em;
+  }
+  
+  .dhoni-intro{
+  }
+  .dhoni-title-image {
+    margin-top: 0.2em;
+  }
+  .dhoni-breif-introduction-1 {
+  }
+  
+  .dhoni-breif-introduction-2 {
+  }
+  
+  .dhoni-timeline {
+    text-align: justify;
+  }
+  
+  .dhoni-timeline ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+  
+  .dhoni-timeline #title-mobile {
+  }
+  .dhoni-timeline #title-desktop {
+    display: none;
+  }
+  .dhoni-timeline #dhoni-wiki-imdb-link p{
+    margin-bottom: 20px;
+  }
+  .dhoni-appreciation {
+    text-align: justify;
+    margin-top: 10px;
+  }
+  
+  .dhoni-surprise-video {
+  
+  }
+  .dhoni-surprise-video #button-1 {
+    margin-bottom: 0.5em;
+  }
+  .dhoni-surprise-video #button-2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .dhoni-social-media {
+  }
+  
+  .dhoni-social-media #card-main {
+  }
+  .dhoni-social-media #card-link-for-mobile a {
+    color: var(--primary-text-color);
+  }
+  .dhoni-social-media #card-link-for-mobile a:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+  }
+  .dhoni-social-media #card-link-for-mobile h3{
+  }
+  .dhoni-social-media #card-one {
+    display: none;
+  }
+  .dhoni-social-media #card-two {
+    display: none;
+  }
+  
+  /*Overiding Bootstrap's modal-header class to match out page accent */
+  .modal-header {
+    border-bottom: 1px solid var(--accent-color);
+  }
+  .modal-footer {
+    border-top: 1px solid var(--accent-color);
+  }
+  
+  hr.hr-style-footer {
+      margin-bottom: 10px;
+      margin-top: 1em;
+      border: 0;
+      height: 0;
+      border-bottom: 1px solid var(--divider-color);
+    }
+  
+  /* All media queries begin here */
+  
+  @media screen and (min-width: 400px) {
+    .cover-image {
+      background: url(https://dl.dropbox.com/s/qery1jsxvtfsq51/cover_desktop.jpg?dl=0) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .dhoni-social-media #card-one {
+      display: inherit;
+    }
+    .dhoni-social-media #card-two {
+      display: inherit;
+    }
+    .dhoni-social-media #card-link-for-mobile {
+      display: none;
+  }
+  }
+  
+  @media screen and (min-width: 520px) {
+    body {
+      font-size: 18px;
+    }
+    /*Keep table contents font size 16px */
+    table {
+      font-size: 16px
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .dhoni-title-image {
+      margin-top: 20px;
+    }
+    .dhoni-timeline #title-mobile {
+      display: none;
+    }
+    .dhoni-timeline #title-desktop {
+      display: inherit;
+    }
+  }
+  
+  
+  @media screen and (min-width: 992px) {
+    .hero-title {
+      font-size: 100px;
+    }
+    .hero-text {
+      font-size: 50px;
+    }
+    .cover-image-2 {
+      background: url(https://dl.dropbox.com/s/8nipacmh6r739wr/cover_desktop_2.jpg?dl=0) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    table {
+      table-layout: auto;
+      word-wrap: normal;
+    }
+  }
+  
+  /*There is this problem I was facing with AOS library, that when mobile device
+  is in landscape, .hero-text and hero-scoll was creating hell lot of problem, since
+  i dont wanna mess with JS so I decided to go this way*/
+  @media screen and (max-height: 410px) {
+    .hero {
+      top: 25%;
+    }
+    .hero-scroll {
+      bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-height: 410px) {
+    .hero-text {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-height: 411px) and (max-height: 480px) {
+    .hero-scroll {
+      bottom: 30px;
+    }
+  }
+  
